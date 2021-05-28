@@ -4,6 +4,15 @@
 var numUtente = parseInt(Math.random() * 6) + 1;
 var numPc = parseInt(Math.random() * 6) + 1;
 
+// controllo chi ha il numero piu alto 
+if (numUtente > numPc) {
+    console.log('hai vinto');
+} else if (numUtente < numPc) {
+    console.log('hai perso');
+} else {
+    console.log('pareggio');
+}
+
 
 
 
