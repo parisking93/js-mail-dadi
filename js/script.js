@@ -6,12 +6,15 @@ var numPc = parseInt(Math.random() * 6) + 1;
 
 // controllo chi ha il numero piu alto 
 if (numUtente > numPc) {
-    console.log('hai vinto');
+    document.getElementById('risultato').innerHTML = 'Hai vinto';
 } else if (numUtente < numPc) {
-    console.log('hai perso');
+    document.getElementById('risultato').innerHTML = 'Hai perso';
 } else {
-    console.log('pareggio');
+    document.getElementById('risultato').innerHTML = 'Pareggio';
 }
+// mostro i numeri che sono usciti 
+document.getElementById('n-utente').innerHTML = 'Questo è il tuo numero random : ' + numUtente;
+document.getElementById('n-pc').innerHTML = 'Questo è il numero random del pc: ' + numPc;
 
 
 
