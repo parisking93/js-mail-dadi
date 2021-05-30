@@ -1,0 +1,70 @@
+/* COMMONS  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h2{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.black{
+    color: black;
+}
+.red{
+    color: red;
+}
+.green{
+    color:green;
+}
+.yellow{
+    color: yellow;
+}
+/* FINE COMMOONS  */
+#container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( to right, lightgreen, lightblue ); 
+}
+#card{
+    background-color: rgba(255, 255, 255, 0.2);
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    animation: appeare 2s ease 1;
+    border: 1px solid white;
+}
+.box_dadi{
+    margin-bottom: 50px;
+}
+#count{
+    color: red;
+}
+#count, .show{
+    animation: appeare 2s ease 1;
+}
+#risultato{
+    animation: appeare_after 3s ease 1;
+    text-transform: uppercase;
+}
+
+
+
+/* animazioni  */
+
+@keyframes appeare{
+    0% {color: transparent; transform: scale(0); }
+    70% {color: transparent;}
+    100% {color: inherit ;transform: scale(1);}
+}
+@keyframes appeare_after{
+    0% {color: transparent; transform: scale(0);}
+    70% {color: transparent;}
+    100% {color: initial ;transform: scale(1);}
+}

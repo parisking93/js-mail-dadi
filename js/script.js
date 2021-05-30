@@ -4,7 +4,7 @@
 var numUtente = parseInt(Math.random() * 6) + 1;
 var numPc = parseInt(Math.random() * 6) + 1;
 
-// inizializzo la variabile in pomeriggio cosi da fare solo due if 
+// inizializzo la variabile in pareggio cosi da fare solo due if 
 var result = 'pareggio';
 
 // controllo chi ha il numero piu alto 
