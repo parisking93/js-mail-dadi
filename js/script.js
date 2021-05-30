@@ -5,13 +5,14 @@ var numUtente = parseInt(Math.random() * 6) + 1;
 var numPc = parseInt(Math.random() * 6) + 1;
 
 // inizializzo la variabile in pareggio cosi da fare solo due if 
-var result = 'pareggio';
+var result ='<span class="yellow">pareggio</span>';
+
 
 // controllo chi ha il numero piu alto 
 if (numUtente > numPc) {
-    result = 'hai vinto';
+    result = '<span class="green">hai vinto</span>';
 } else if (numUtente < numPc) {
-    result = 'hai perso' ;
+    result = '<span class="red">hai perso</span>' ;
 }
 // mostro i numeri che sono usciti e il risultato
 document.getElementById('risultato').innerHTML = result;
