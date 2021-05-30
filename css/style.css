@@ -33,16 +33,11 @@ h2{
     text-align: center;
     padding: 30px;
     border-radius: 20px;
-    animation: appeare 2s ease 1;
     animation: bordo 2s ease 1;
-
     border: 1px solid white;
 }
 .box_dadi{
     margin-bottom: 50px;
-}
-#count{
-    color: red;
 }
 #count, .show, .green, .red, .yellow{
     animation: appeare 2s ease 1;
@@ -51,8 +46,6 @@ h2{
     animation: appeare_after 3s ease 1;
     text-transform: uppercase;
 }
-
-
 
 /* animazioni  */
 
